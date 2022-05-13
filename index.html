@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <div class="header__title">
+                    <p class="header__intro">Hi,</p>
+                    <h1 class="header__name"><span>I am </span>Anna Shalashova</h1>
+                    <h2 class="header__profession">Junior Frontend Developer</h2>
+                    <div class="header__buttons">
+                        <a href="#projects" class="btn">Projects</a>
+                        <a href="#" class="btn">CV</a>
+                        <a href="#" class="btn__round"></a>
+                        <a href="#" class="btn__round"></a>
+                    </div>
+                </div>
+
+                <div class="header__image">
+                    <div class="header__image_wrap">
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="projects">
+                <h2 class="projects__title  title">
+                    My little projects
+                </h2>
+                <div class="projects__container  _container">
+
+                    <div class="projects__list">
+                        <div class="projects__item">
+                            <a href="https://shalashova.github.io/simple/" target="_blank">
+                                <img class="project__image" src="images/simple.png" alt=""></a>
+                            <p class="project__text">html + css + adaptive</p>
+
+                        </div>
+                        <div class="projects__item">
+                            <a href="https://shalashova.github.io/kvast/" target="_blank">
+                                <img class="project__image" src="images/kvast.png" alt=""></a>
+                            <p class="project__text">html + css </p>
+
+                        </div>
+                        <div class="projects__item">
+                            <a href="https://shalashova.github.io/pitomnik/" target="_blank">
+                                <img class="project__image" src="images/pitomnik.png" alt=""></a>
+                            <p class="project__text">html + css + js</p>
+
+                        </div>
+                        <div class="projects__item">
+                            <img id="romanCalc" class="project__image" src="images/clock.jpg" alt="">
+                            <p class="project__text">js </p>
+                        </div>
+
+
+                        <script>
+                            document.getElementById("romanCalc").addEventListener('click', function() {
+                                document.getElementById("iframe-wrap").classList.toggle("hide");
+                                document.getElementById("close-iframe").addEventListener('click', function() {
+                                    document.getElementById('iframe-wrap').classList.add("hide");
+
+                                })
+
+                            })
+                        </script>
+                        <div id="iframe-wrap" class="hide"><span id="close-iframe"><img src="images/close.png" alt=""></span><iframe id="romanFrame" frameborder="0" scrolling="no" src="roman-converter.html" frameborder="5"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container _container">
+                <nav class="footer__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#"></a>Home</li>
+                        <li class="menu__item">Projects</li>
+                        <li class="menu__item">CV</li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/header-image.js"></script>
+
+</html>
