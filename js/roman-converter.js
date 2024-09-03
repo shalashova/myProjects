@@ -4,8 +4,7 @@
 
  function calculate() {
 
-     let num = form.decNumber.value;
-     console.log(num);
+     let num = form.decNumber.value; 
      if (num < 4000) {
 
 
