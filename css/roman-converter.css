@@ -12,8 +12,15 @@ form {
     width: 100%;
     font-family: 'Work Sans', sans-serif;
     font-size: 26px;
+    backgroundcolor: #fff;
 }
-
+h3 {
+    width: 100%;
+    font-size: 22px;
+    color: #002222;
+    text-align: center
+    
+}
 input {
     padding: 10px;
     border: 0px solid #fff;
