@@ -9,7 +9,7 @@ body {
 }
 
 form {
-    width: 80%;
+    width: 100%;
     font-family: 'Work Sans', sans-serif;
     font-size: 26px;
 }
@@ -21,7 +21,7 @@ input {
 }
 
 input:focus {
-    border: 0px solid #fff;
+    border: 1px solid #fff;
     background-color: #fff;
 }
 
